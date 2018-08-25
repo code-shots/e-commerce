@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura";
+  font-weight: normal; }
+
+.flex-center, .logo, .gallery-nav div, .gallery-counter div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-wrapper {
+  width: 1200px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 1; }
+
+.logo {
+  font-size: 10px;
+  background: #1D1D1D;
+  color: #FFF;
+  width: 230px;
+  height: 100%; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #FFF; }
+  nav a {
+    color: #B1B1B1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    transition: color 1s ease; }
+    nav a:hover {
+      color: #1D1D1D; }
+
+.active {
+  color: #1D1D1D; }
+
+.gallery-nav {
+  width: 230px;
+  height: 105px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center; }
+  .gallery-nav div {
+    flex: 1;
+    background-color: #FFC001;
+    cursor: pointer; }
+    .gallery-nav div:hover {
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1); }
+    .gallery-nav div img {
+      height: 18px; }
+
+#white-bg {
+  background-color: #FFF;
+  transition: box-shadow 1s ease; }
+  #white-bg img {
+    transform: rotate(180deg); }
+
+.column-wrapper {
+  display: flex;
+  height: 100vh; }
+  .column-wrapper section {
+    display: flex; }
+
+.text-section {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 110px; }
+  .text-section h1 {
+    font-size: 95px;
+    width: 490px;
+    margin-bottom: 100px; }
+  .text-section p {
+    max-width: 400px;
+    line-height: 25px;
+    color: #B1B1B1;
+    margin-bottom: 50px;
+    letter-spacing: 1px; }
+
+.details-btn {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  cursor: pointer; }
+  .details-btn:hover img {
+    transform: rotate(405deg); }
+  .details-btn img {
+    transition: all .6s ease;
+    height: 11px;
+    margin-left: 10px; }
+
+.image-section {
+  flex: 1.5;
+  background: url(https://minimalissimo.com/cms/wp-content/uploads/2017/11/fermo-unit-3.jpg);
+  background-size: cover;
+  position: relative; }
+
+.gallery-counter {
+  position: absolute;
+  bottom: 0;
+  left: -490px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+  .gallery-counter div:first-child {
+    height: 80px;
+    width: 300px;
+    background-color: #FFC001;
+    color: #1D1D1D;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .gallery-counter div:last-child {
+    height: 135px;
+    width: 355px;
+    background-color: #1D1D1D;
+    color: #FFF;
+    display: flex;
+    align-items: center; }
+    .gallery-counter div:last-child h2 {
+      letter-spacing: 1px;
+      font-size: 70px;
+      margin: 0 50px 0 40px; }
+    .gallery-counter div:last-child div {
+      height: 3px;
+      width: 130px;
+      background-color: #B1B1B1;
+      display: flex;
+      justify-content: flex-start; }
+      .gallery-counter div:last-child div div {
+        height: 3px;
+        width: 30px;
+        background-color: #FFF; }
+
+.sidebar-section {
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF; }
+
+.hamburger {
+  height: 115px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer; }
+  .hamburger div {
+    height: 3px;
+    width: 30%;
+    background-color: #1D1D1D;
+    margin-bottom: 5px; }
+
+#short {
+  width: 25%;
+  transition: width .7s ease; }
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  margin-top: 200px; }
+  .social a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #B1B1B1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    transition: color 1s ease; }
+    .social a:first-child:hover {
+      color: #4267B2; }
+    .social a:last-child:hover {
+      color: #08A0E9; }

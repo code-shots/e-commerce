@@ -1,0 +1,233 @@
+// Variables
+$black: #1D1D1D
+$grey: #B1B1B1
+$yellow: #FFC001
+
+// Global styles
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: "Futura"
+	font-weight: normal
+
+.flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+// Navigation
+.nav-wrapper
+	width: 1200px
+	height: 90px
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: row
+	z-index: 1
+
+.logo
+	font-size: 10px
+	background: $black
+	color: #FFF
+	width: 230px
+	height: 100%
+	@extend .flex-center
+
+nav
+	display: flex
+	align-items: center
+	justify-content: space-around
+	width: 100%
+	background-color: #FFF
+
+	a
+		color: $grey
+		text-decoration: none
+		display: flex
+		flex-direction: row
+		transition: color 1s ease
+
+		&:hover
+			color: $black
+
+.active
+	color: $black
+
+// Gallery navigation
+.gallery-nav
+	width: 230px
+	height: 105px
+	position: absolute
+	bottom: 0
+	right: 0
+	display: flex
+	flex-direction: row
+	align-self: center
+
+	div
+		flex: 1
+		background-color: $yellow
+		@extend .flex-center
+		cursor: pointer
+
+		&:hover
+			box-shadow: 0px 0px 50px rgba(#000, 0.1)
+
+		img
+			height: 18px
+
+#white-bg
+	background-color: #FFF
+	transition: box-shadow 1s ease
+
+	img
+		transform: rotate(180deg)
+
+// Text section
+.column-wrapper
+	display: flex
+	height: 100vh
+
+	section
+		display: flex
+
+.text-section
+	flex: 1
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	padding-left: 110px
+
+	h1
+		font-size: 95px
+		width: 490px
+		margin-bottom: 100px
+
+	p
+		max-width: 400px
+		line-height: 25px
+		color: $grey
+		margin-bottom: 50px
+		letter-spacing: 1px
+
+.details-btn
+	font-weight: bold
+	font-size: 16px
+	display: flex
+	align-items: center
+	letter-spacing: 1px
+	cursor: pointer
+
+	&:hover img
+		transform: rotate(405deg)
+
+	img
+		transition: all .6s ease
+		height: 11px
+		margin-left: 10px
+
+// Image section
+.image-section
+	flex: 1.5
+	background: url(https://minimalissimo.com/cms/wp-content/uploads/2017/11/fermo-unit-3.jpg)
+	background-size: cover
+	position: relative
+
+.gallery-counter
+	position: absolute
+	bottom: 0
+	left: -490px
+	display: flex
+	flex-direction: row
+	align-items: flex-end
+
+	div
+
+		&:first-child
+			height: 80px
+			width: 300px
+			background-color: $yellow
+			color: $black
+			@extend .flex-center
+			font-weight: bold
+			letter-spacing: 1px
+
+		&:last-child
+			height: 135px
+			width: 355px
+			background-color: $black
+			color: #FFF
+			display: flex
+			align-items: center
+
+			h2
+				letter-spacing: 1px
+				font-size: 70px
+				margin: 0 50px 0 40px
+
+			div
+				height: 3px
+				width: 130px
+				background-color: $grey
+				display: flex
+				justify-content: flex-start
+
+				div
+					height: 3px
+					width: 30px
+					background-color: #FFF
+
+// Sidebar
+.sidebar-section
+	width: 115px
+	display: flex
+	flex-direction: column
+	background-color: #FFF
+	// overflow: hidden
+
+.hamburger
+	height: 115px
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	cursor: pointer
+
+	div
+		height: 3px
+		width: 30%
+		background-color: $black
+		margin-bottom: 5px
+
+#short
+	width: 25%
+	transition: width .7s ease
+
+.social
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 200px
+	width: 100%
+	align-items: center
+	margin-top: 200px
+
+	a
+		writing-mode: vertical-rl
+		text-orientation: mixed
+		color: $grey
+		text-decoration: none
+		display: flex
+		flex-direction: row
+		transition: color 1s ease
+
+		&:first-child
+			&:hover
+				color: #4267B2
+
+		&:last-child
+			&:hover
+				color: #08A0E9
