@@ -9,6 +9,7 @@
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 	<script defer src="/js/animation.js"></script>
 	<script defer src="/js/function.js"></script>
+	<script defer src="/js/fetch.js"></script>
 </head>
 <body>
 	<div class="nav-wrapper">
@@ -17,7 +18,7 @@
 		</div>
 
 		<nav>
-			<a href="#">
+			<a href="#" id="collections-link">
 				<div class="letter">C</div>
 				<div class="letter">o</div>
 				<div class="letter">l</div>
@@ -30,12 +31,12 @@
 				<div class="letter">n</div>
 				<div class="letter">s</div>
 			</a>
-			<a href="#" class="active">
+			<a href="#" class="active" id="new-link">
 				<div class="letter">N</div>
 				<div class="letter">e</div>
 				<div class="letter">w</div>
 			</a>
-			<a href="#">
+			<a href="#" id="trending-link">
 				<div class="letter">T</div>
 				<div class="letter">r</div>
 				<div class="letter">e</div>
@@ -45,7 +46,7 @@
 				<div class="letter">n</div>
 				<div class="letter">g</div>
 			</a>
-			<a href="#">
+			<a href="#" id="popular-link">
 				<div class="letter">P</div>
 				<div class="letter">o</div>
 				<div class="letter">p</div>
@@ -58,7 +59,7 @@
 	</div>
 
 	<div class="column-wrapper">
-		<section class="text-section">
+		<section class="text-section new-content">
 			<h1>Van Gend Residence</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
